@@ -1,3 +1,14 @@
+// `T` is a placeholder type, and it can be anything
+function identity<T>(value: T): T {
+  return value;
+}
+
+// Example usage
+console.log(identity<number>(100000)); // Output: 5
+console.log(identity<string>('Hello')); // Output: "Hello"
+
+// -----------------
+
 /**
  * Type utility that converts all string properties of an object to uppercase.
  * @template T - The type of the input object.
